@@ -3,28 +3,281 @@
 <head>
   <title>douban demo by boostrap4</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
-  <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
-  <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  
+
 </head>
 <body>
-  <nav>
-    <ul class="nav  bg-dark navbar">
-      <li class="nav-item ">
-        <a href="#" class="text-white">豆瓣</a>
-      </li>
-      <li class="nav-item float-left">
-        <a href="#" class="text-white">豆瓣</a>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="text-white">豆瓣</a>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="text-white">豆瓣</a>
-      </li>
-    </ul>
-  </nav>
+  <!--nav bar-->
+  <div id="db-global-nav" class="global-nav">
+    <div class="bd">
+      <!-- top nav info-->
+      <div class="top-nav-info">
+        <ul>
+          <!--dou mail list， including 2 li elements-->
+          <li>
+            <a href="#" id="top-nav-doumail-link">豆邮</a>
+          </li>
+          <!--nav user account-->
+          <li class="nav-user-account">
+            <a href="#" target="_blank" class="bn-more"><span>木一的账号</span><span class="arrow"></span></a>
+            <!--more items-->
+            <div class="more-items">
+              <!--table's cellpadding ?cellspacing?-->
+              <table cellpadding="0" cellspacing="0">
+                <tbody>
+                  <tr>
+                    <td>
+                      <a href="#">个人主页</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="#" target="_blank">我的订单</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="#" target="_blank">我的钱包</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="#" target="_blank">账号管理</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="#">退出</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!--top nav reminder-->
+      <div class="top-nav-reminder">
+        <a href="#" class="lnk-reminder">提醒</a>
+        <!--.more-items, want to show it, click it -->
+        <div id="top-nav-notimenu" class="more-items">
+          <div class="bd">
+            <p>加载中...</p>
+          </div>
+        </div>
+      </div>
+      <!--top nav doubanapp-->
+      <div class="top-nav-doubanapp">
+        <a href="#" class="lnk-doubanapp">下载客户端</a>
+        <!-- doubanapp tip div-->
+        <div id="doubanapp-tip">
+          <a href="#" class="tip-link">豆瓣<span class="version">6.0</span>全新发布</a>
+          <a href="#" class="tip-close">x</a>
+        </div>
+        <!--top nav appintro-->
+        <div id="top-nav-appintro" class="more-items">
+          <p class="appintro-title">豆瓣</p>
+          <p class="qrcode">扫码直接下载</p>
+          <div class="download">
+            <a href="#">iPhone</a><span>.</span>
+            <a href="#">Android</a>
+          </div>
+        </div>
+      </div>
+      <!--global nav items-->
+      <div class="global-nav-items">
+        <ul>
+          <li class="on">
+            <a href="#" data-more-urldict="">
+              豆瓣
+            </a>
+          </li>
+          <li class="">
+            <a href="#" target="_blank" data-more-urldict="">
+              读书
+            </a>
+          </li>
+          <li class="">
+            <a href="#" target="_blank" data-more-urldict="">
+              电影
+            </a>
+          </li>
+          <li class="">
+            <a href="#" target="_blank" data-more-urldict="">
+              音乐
+            </a>
+          </li>
+          <li class="">
+            <a href="#" target="_blank" data-more-urldict="">
+              同城
+            </a>
+          </li>
+          <li class="">
+            <a href="#" target="_blank" data-more-urldict="">
+              小组
+            </a>
+          </li>
+          <li class="">
+            <a href="#" target="_blank" data-more-urldict="">
+              阅读
+            </a>
+          </li>
+          <li class="">
+            <a href="#" target="_blank" data-more-urldict="">
+              FM
+            </a>
+          </li>
+          <li class="">
+            <a href="#" target="_blank" data-more-urldict="">
+              时间
+            </a>
+          </li>
+          <li class="">
+            <a href="#" target="_blanl" data-more-urldict="">
+              豆品
+            </a>
+          </li>
+          <li>
+            <a href="#" class="bn-more"><span>更多</span></a>
+            <div class="more-items">
+              <table cellpadding="0" cellspacing="0">
+                <tbody>
+                  <tr>
+                    <td>
+                      <a href="#" data-more-urldict="">
+                        豆瓣摄影
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+                
+              </table>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!--db nav sns-->
+  <div id="db-nav-sns" class="nav">
+    <div class="nav-wrap">
+      <div class="nav-primary">
+        <!--nav logo-->
+        <div class="nav-logo">
+          <a href="#">豆瓣社区</a>
+        </div>
+        <!--nav search-->
+        <div class="nav-search">
+          <form action="" method="get">
+            <fieldset>
+              <legend>搜索：</legend>
+              <label for="inp-query">搜索你感兴趣的内容和人...</label>
+              <div class="inp">
+                <input type="hidden" name="source"  value="suggest">
+                <input id="inp-query" name="q" size="22" maxlength="60" autocomplete="off" value="">
+              </div>
+              <div class="inp-btn">
+                <input type="submit" value="搜索">
+              </div>
+            </fieldset>  
+          </form>
+        </div>
+        <!--nav items-->
+        <div class="nav-items">
+          <ul>
+            <li>
+              <a href="#">首页</a>
+            </li>
+            <li>
+              <a href="#">我的豆瓣</a>
+            </li>
+            <li>
+              <a href="#">话题广场<img src="#" alt="new" style="position: absolute;top: -7px;right: -13px;" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--wrapper including content and aside -->
+  <div id="wrapper">
+    <!--content div-->
+    <div id="content">
+      <div class="grid-16-8 clearfix">
+        <!--artical div-->
+        <div class="article">
+          <!--statuses-setting div -->
+          <div class="statuses-setting">
+            <!--hd div-->
+            <div class="hd">
+              <a href="#" class="a_status_setting">首页设置</a>
+            </div>
+            <!--bd div-->
+            <div class="bd" style="display: none;">
+              <i class="arrow"></i>
+              <div class="loading">正在加载中...</div>
+            </div>
+            <p class="settings-tips" style="display: none;">设置成功! 相关内容后继会出现在你的首页上
+            </p>
+          </div>
+          <!--statuses div-->
+          <div class="statues">
+            <!--db isay-->
+            <div id="db-isay" class="mod isay isay-disable has-commodity">
+              <form name="mbform" method="post" action="" >
+                <div style="display: none;">
+                  <input type="hidden" name="ck" value="yxF9">
+                </div>
+                <!--isay lists -->
+                <ul class="isay-links">
+                  <li class="isay-main active">
+                    <a href="#" data-action="main">说句话
+                    </a>
+                  </li>
+                  <li class="isay-pic">
+                    <a href="#" data-action="pic">发照片
+                    </a>
+                  </li>
+                  <li class="isay-share">
+                    <a href="#" data-action="share">推荐网页
+                    </a>
+                  </li>
+                  <li class="notes-link">
+                    <a href="#" title="写日记">写日记
+                    </a>
+                  </li>
+                </ul>
+                <!--item div -->
+                <div class="item">
+                  <p class="highlighter metion-highlighter"></p>
+                  <p class="highlighter error-highlighter"></p>
+                  <label id="isay-label" for="isay-cont">分享生活点滴...</label>
+                  <textarea data-minheight="70" tabindex="1" id="isay-cont" name="comment" rows="1"></textarea>
+                </div>
+                <div></div>
+                <div></div>
+              </form>
+              <div></div>
+            </div>
+            <!--stream items-->
+            <div></div>
+          </div>
+        </div>
+        <!--aside div-->
+        <div class="aside">
+          
+        </div>
+        <!--extra div-->
+        <div class="extra">
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      
+    </div>
+  </div>
+
 </body>
 </html>
