@@ -256,18 +256,58 @@
                   <label id="isay-label" for="isay-cont">分享生活点滴...</label>
                   <textarea data-minheight="70" tabindex="1" id="isay-cont" name="comment" rows="1"></textarea>
                 </div>
-                <div></div>
-                <div></div>
+                <div id="isay-act-field" class="isay-act"></div>
+                <div class="btn">
+                  <span id="isay-counter"></span>
+                  <span class="bn-submit bn-flat js-verify-accouont" data-is-verified="True" data-verify-url="#">
+                    <input type="submit" id="isay-submit" tabindex="1" value="发布">
+                  </span>
+                  <a href="#" target="_blank" class="lnk-share-tools" onclick="">
+                    添加网页推荐工具
+                  </a>
+                </div>
               </form>
-              <div></div>
+              <div class="btn-group">
+                <form charset="utf-8" id="isay-upload" data-action="pic" action="" enctype="multipart/form-data" method="post">
+                  <div style="display: none;">
+                    <input type="hidden" name="ck" value="yxF9"/>
+                  </div>
+                  <input type="file" id="isay-upload-inp" tabindex="2" autocomplete="off" data-action="pic" name="image" title="可传多张照片" multiple>
+                </form>
+                <a href="#" tabindex="-1" data-action="pic" class="ico ico-pic" title="上传照片">照片</a>
+                <a href="#" tabindex="2" data-action="pic" class="ico ico-pic" title="添加话题">话题</a>
+              </div>
             </div>
             <!--stream items-->
-            <div></div>
+            <div class="stream-items">
+              <!--serveral status here-->
+              <div class="new-status status-wrapper" data-id="" data-atype="review" data-uid="">status1</div>
+              <div class="new-status status-wrapper" data-id="" data-atype="review" data-uid="">status2</div>
+              <div class="new-status status-wrapper" data-id="" data-atype="review" data-uid="">status3</div>
+              <div class="new-status status-wrapper" data-id="" data-atype="review" data-uid="">status4</div>
+              <div class="new-status status-wrapper" data-id="" data-atype="review" data-uid="">status5</div>
+              <div class="new-status status-wrapper" data-id="" data-atype="review" data-uid="">status6</div>
+              <div class="new-status status-wrapper" data-id="" data-atype="review" data-uid="">status7</div>
+              <div class="new-status status-wrapper" data-id="" data-atype="review" data-uid="">status8</div>
+            </div>
+            <!--paginator-->
+            <div class="paginator">
+              <span class="prev">前页</span>
+              <span class="thispage" data-total-page="">1</span>
+              <a href="#">2</a>
+              <a href="#">3</a>
+              <a href="#">4</a>
+              <a href="#">5</a>
+              <a href="#">6</a>
+              <a href="#">7</a>
+              <span class="break">...</span>
+            </div>
           </div>
         </div>
         <!--aside div-->
         <div class="aside">
-          
+          <div class="notify-mod"></div>
+          <div id="dale_homepage_login_top_right" class="mod" ad-status="appended" data-sell-type="CPC" data-type="YoudaoRender" data-version="3.0.51"></div>
         </div>
         <!--extra div-->
         <div class="extra">
